@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="shortcut icon" href="calc.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Calculadora Basic Style</title>
+  </head>
+  <body>
+    <main data-theme="dark">
+      <header class="flex align-center justify-between">
+        <h1>Calc.js</h1>
+        <button title="Escuro/Claro" type="button" id="themeSwitcher">Dark/Light</button>
+      </header>
+      <section class="flex align-center justify-between">
+        <button id="copyToClipboard" title="Copiar/Copiado">Copy</button>
+        <input type="text" id="input">
+      </section>
+      <div id="keys">
+        <button id="clear" title="Limpar">C</button>
+        <button class="nums" data-value="(" title="Abre parênteses">(</button>
+        <button class="nums" data-value=")" title="Fecha parênteses">)</button>
+        <button title="Apagar" id="delete"><span class="material-icons" id="p">&#xe14a;</span></button>
+        <button class="nums" data-value="7" title="Sete">7</button>
+        <button class="nums" data-value="8" title="Oito">8</button>
+        <button class="nums" data-value="9" title="Nove">9</button>
+        <button class="symbol" data-value="/" title="Dividir">/</button>
+        <button class="nums" data-value="4" title="Quatro">4</button>
+        <button class="nums" data-value="5" title="Cinco">5</button>
+        <button class="nums" data-value="6" title="Seis">6</button>
+        <button class="symbol" data-value="*" title="Multiplicar">*</button>
+        <button class="nums" data-value="1" title="Um">1</button>
+        <button class="nums" data-value="2" title="Dois">2</button>
+        <button class="nums" data-value="3" title="Três">3</button>
+        <button class="symbol" data-value="-" title="Subtrair">-</button>
+        <button class="symbol" data-value="." title="Ponto">.</button>
+        <button class="nums" data-value="0" title="Zero">0</button>
+        <button id="equal" title="Resultado">=</button>
+        <button class="symbol" data-value="+" title="Adicionar">+</button>
+      </div>
+    </main>
+  </body>
+</html>
